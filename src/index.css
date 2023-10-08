@@ -11,3 +11,16 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
+
+@media (min-width: 700px){
+  body{
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 900px){
+  body{
+    padding: 0 200px;
+  }
+}
