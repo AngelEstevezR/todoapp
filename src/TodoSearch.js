@@ -1,8 +1,13 @@
+import React from 'react';
 import './TodoSearch.css';
 
-function TodoSearch(){
+function TodoSearch({searchValue,setSearchValue}){
     return(
-        <input placeholder="Escribe algo..." className="TodoSearch"/>
+        <input placeholder="clase13inicio" className="TodoSearch"
+        value={searchValue}
+        onChange={(event)=>{
+            setSearchValue(event.target.value);
+        }}/>
     )
 }
 
